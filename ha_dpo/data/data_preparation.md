@@ -26,7 +26,7 @@ We provide hallucination-aware positive-negative data targeted at each LVLM. Dow
 
 | MiniGPT-4 | LLaVA-1.5 | InstructBLIP |
 | :--: | :--: | :--: |
-| [download](https://huggingface.co/datasets/juliozhao/hadpo-data/tree/main/hadpo/minigpt4) | [download](https://huggingface.co/datasets/juliozhao/hadpo-data/tree/main/hadpo/llava-v1.5) | [download](https://huggingface.co/datasets/juliozhao/hadpo-data/tree/main/hadpo/instructblip) |
+| [huggingface](https://huggingface.co/datasets/juliozhao/hadpo-data/tree/main/hadpo/minigpt4), [opendatalab](https://openxlab.org.cn/datasets/zzy8782180/HA-DPO/tree/main/hadpo/minigpt4) | [huggingface](https://huggingface.co/datasets/juliozhao/hadpo-data/tree/main/hadpo/llava-v1.5), [opendatalab](https://openxlab.org.cn/datasets/zzy8782180/HA-DPO/tree/main/hadpo/llava-v1.5) | [huggingface](https://huggingface.co/datasets/juliozhao/hadpo-data/tree/main/hadpo/instructblip), [opendatalab](https://openxlab.org.cn/datasets/zzy8782180/HA-DPO/tree/main/hadpo/instructblip) |
 
 <details>
 <summary> data structure </summary>

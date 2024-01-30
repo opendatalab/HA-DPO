@@ -2,7 +2,7 @@
 
 **Shanghai Artificial Intelligence Laboratory**
 
-[[Paper]](https://arxiv.org/pdf/2311.16839.pdf) [[Data]](https://huggingface.co/datasets/juliozhao/hadpo-data) [[Models]](https://huggingface.co/juliozhao)
+[[Paper]](https://arxiv.org/pdf/2311.16839.pdf) [[Data](huggingface)](https://huggingface.co/datasets/juliozhao/hadpo-data) [[Data](opendatalab)](https://openxlab.org.cn/datasets/zzy8782180/HA-DPO) [[Models]](https://huggingface.co/juliozhao)
 
 ## Introduction
 
@@ -23,6 +23,12 @@ We propose **HA-DPO** (Hallucination-aware Direct Preference Optimization), whic
 - [x] SHR Evaluation (Sentence-level Hallucination Ratio)
 
 - [ ] Human-free positive-negative data mining pipeline
+
+## Demo
+
+Online demo will be available soon!
+
+https://github.com/JulioZhao97/HA-DPO-video/assets/40555727/b35879ba-ab2a-4e9e-93d8-0e3b47e8a7e9
 
 ## Getting Started
 
