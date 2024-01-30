@@ -53,7 +53,7 @@ deepspeed ha_dpo/models/llava-v1_5/train_dpo.py \
     --save_strategy "steps" \
     --save_steps 50000 \
     --save_total_limit 1 \
-    --learning_rate 1e-6 \
+    --learning_rate 2e-6 \
     --weight_decay 0. \
     --warmup_steps 0 \
     --lr_scheduler_type "cosine" \
