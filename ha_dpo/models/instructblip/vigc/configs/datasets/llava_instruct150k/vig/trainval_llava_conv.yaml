@@ -1,0 +1,8 @@
+
+
+datasets:
+  instruct_blip_llava_conv_vig:
+    data_type: images
+    build_info:
+      images: path/to/image/folder
+      annotation: path/to/json

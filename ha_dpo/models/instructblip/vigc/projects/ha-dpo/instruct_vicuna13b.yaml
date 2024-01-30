@@ -1,0 +1,35 @@
+model:
+  arch: dpo_blip2_vicuna_instruct
+  model_type: vicuna13b
+  pretrained: "hadpo/models/instructblip/instruct_blip_vicuna13b_trimmed.pth"
+  llm_model: "lmsys/vicuna-13b-v1.1"
+  lora_config: 
+    lora_r: 0
+    lora_alpha: 16
+    lora_dropout: 0.1
+    target_modules: [ "q_proj", "k_proj", "v_proj",]
+
+datasets:
+  instruct_blip_given_q_coco2017_vig_test: # name of the dataset builder
+    annotation: ""
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 224
+      eval:
+        name: "blip_image_eval"
+        image_size: 224
+    text_processor:
+      eval:
+        name: "blip_caption"
+        max_words: 100
+
+run:
+  runner: runner_iter
+  task: dpo
+  seed: 42
+  
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True

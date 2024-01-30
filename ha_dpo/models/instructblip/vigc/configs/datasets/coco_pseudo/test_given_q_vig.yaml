@@ -1,0 +1,5 @@
+datasets:
+  instruct_blip_given_q_coco2017_vig_test:
+    data_type: images
+    build_info:
+      images: path/to/image/folder

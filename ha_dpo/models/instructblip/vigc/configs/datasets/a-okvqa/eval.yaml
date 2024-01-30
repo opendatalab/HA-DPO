@@ -1,0 +1,6 @@
+datasets:
+  instruct_blip_aokvqa_eval:
+    data_type: images
+    build_info:
+      annotation: path/to/json
+      images: path/to/image/folder

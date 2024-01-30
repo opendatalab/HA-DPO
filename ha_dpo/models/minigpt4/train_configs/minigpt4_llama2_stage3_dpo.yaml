@@ -1,0 +1,28 @@
+model:
+  arch: mini_gpt4_dpo
+  model_type: pretrain_llama2
+
+  max_txt_len: 320
+  end_sym: "</s>"
+  prompt_path: "ha_dpo/models/minigpt4/prompts/alignment.txt"
+  prompt_template: '[INST] {} [/INST] '
+  ckpt: 'ha_dpo/models/minigpt4/pretrained_minigpt4_llama2_7b.pth'
+
+datasets:
+  cc_sbu_align:
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+
+run:
+  task: image_text_pretrain
+  seed: 42
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True

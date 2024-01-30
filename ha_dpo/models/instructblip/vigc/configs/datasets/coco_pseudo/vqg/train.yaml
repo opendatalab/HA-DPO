@@ -1,0 +1,6 @@
+datasets:
+  instruct_blip_coco_pseudo_vqg:
+    data_type: images
+    build_info:
+      images: path/to/image/folder
+      image_ids: path/to/json

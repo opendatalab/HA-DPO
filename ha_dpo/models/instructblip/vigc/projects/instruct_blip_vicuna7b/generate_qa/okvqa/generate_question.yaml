@@ -1,0 +1,48 @@
+model:
+  arch: blip2_vicuna_instruct
+  model_type: vicuna7b
+  pretrained: "path/to/your/pretrained/weight"
+
+datasets:
+  instruct_blip_coco2017_vig_test: # name of the dataset builder
+    filter:
+      - llava
+      - okvqa
+    vis_processor:
+      eval:
+        name: "blip_image_eval"
+        image_size: 224
+    text_processor:
+      eval:
+        name: "blip_caption"
+        max_words: 100
+
+run:
+  runner: runner_iter
+  task: instruct_blip_vqg
+  generate_task: gq
+  data_type: okvqa
+  weighted_sample: TRUE
+
+  batch_size_train: 16
+  batch_size_eval: 8
+  num_workers: 4
+
+  iters_per_inner_epoch: 2000
+  max_iters: 60000
+
+  seed: 42
+  output_dir: "output/instruct-blip/generate/result"
+
+  evaluate: True
+  test_splits: [ "eval" ]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
+
+  generate_cfg:
+    max_len: 200
+    min_len: 10
+    num_beams: 5

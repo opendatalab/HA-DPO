@@ -1,0 +1,6 @@
+datasets:
+  cc_sbu:
+    length: 1666681
+    data_type: images
+    build_info:
+      storage: path/to/cc_sbu/{00000..01255}.tar
