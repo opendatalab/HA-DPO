@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HA-DPO</title>
+  <link rel="icon" type="image/x-icon" href="static/images/opendatalab_logo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<style>
+
+.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
+.first-row {background-color: lime; }
+.second-row { flex-grow: 1; border: none; margin: 0; padding: 0;}
+</style>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> Beyond Hallucinations: Enhancing LVLMs through
+Hallucination-Aware Direct Preference Optimization (HA-DPO) </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Zhiyuan Zhao <sup>*</sup>,
+              </span>
+
+              <span class="author-block">
+                <a href="https://wangbindl.github.io/" target="_blank">Bin Wang</a> <sup>*</sup>,
+              </span>
+
+              <span class="author-block">
+                Linke Ouyang <sup>*</sup>,
+              </span>
+              
+              <br>
+              <span class="author-block">
+                Xiaoyi Dong</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://myownskyw7.github.io/" target="_blank">Jiaqi Wang</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://conghui.github.io/" target="_blank">Conghui He</a> <sup>&dagger;</sup>,
+              </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <span class="author-block">Shanghai AI Laboratory, &nbsp;&nbsp; </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution &nbsp; &nbsp; &nbsp; <sup>&dagger;</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/opendatalab/HA-DPO" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2311.16839" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span>Demo (available soon)</span>
+                  </a>
+                </span>
+
+                 <!-- HF Data Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/juliozhao/hadpo-data" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/hf.jpeg">
+                  </span>
+                  <span>Data</span> 
+                </a>  
+              </span>
+              <!-- OpenDataLab Data Link -->
+              <span class="link-block">
+                <a href="https://openxlab.org.cn/datasets/zzy8782180/HA-DPO" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="static/datalab_logo.jpeg">
+                </span>
+                <span>Data</span> 
+              </a>
+            </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="row-container">
+  <iframe height="750px" src= "https://g-app-center-035025-0066-904bm4b.openxlab.space/" class="second-row"></iframe>
+</div> -->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">Demo Video</h2>
+        <div class="content has-text-justified">
+          <p>
+            <video width="1000" height="600" controls>
+              <source src="static/demo230130.mov" type="video/mp4">
+            </video>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Multimodal large language models have made significant advancements in recent years, yet they still suffer from a common issue known as the "hallucination problem" where the models generate textual descriptions that contain inaccurate or non-existent content from the image. To address this issue, we introduces a novel strategy: Hallucination-Aware Direct Preference Optimization (HA-DPO). Our approach treats the hallucination problem as a unique preference selection issue, where the model is trained to favor the non-hallucinating response when presented with two responses of the same image (one accurate and one hallucinating). We also presents an efficient process for constructing hallucination sample pairs to ensure high-quality, style-consistent pairs for stable HA-DPO training. We applied this strategy to three mainstream multimodal models, and the results showed a significant reduction in the hallucination problem and an enhancement in the models' generalization capabilities. For example, with HA-DPO, the MiniGPT-4 model demonstrates significant advancements: POPE accuracy increases from 51.13% to 85.66% (34.5% absolute improvement), and the MME score escalates from 968.58 to 1365.76 (41% relative improvement).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Paper Instroduction -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3"><small>Hallucination Mitigation strategy in HA-DPO</small></h2>
+        <div class="content has-text-justified">
+          <img width="1000px" src="static/overview.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;" />
+          <p>The hallucination mitigation strategy in HA-DPO can consists of 3 steps:</p>
+          <p>
+            <b>1. Description Generation</b>: We randomly select images from the VG dataset and use the LVLM to generate corresponding detailed descriptions. 
+          </p>
+          <p>  
+            <b>2. GPT-4 Hallucination Detection and Correction</b>: Next, input the model-generated description and all the annotation information of the original image into GPT-4 and provide a detailed prompt template to enable GPT-4 to check whether there are hallucinations in the generated description. If hallucinations exist, a corrected description without hallucinations needs to be provided. This way, we can obtain the positive and negative responses corresponding to an image. In fact, hallucinations almost always occur when a multimodal model provides a detailed image description.
+          </p>
+          <p>  
+            <b>3. Style-consistent Data Augmentation</b>: To ensure style consistency between positive and negative sample sentences and obtain more samples, we use GPT-4 to rewrite the positive and negative samples obtained in the previous step, ensuring that the positivity and negativity remain unchanged. Besides, we further augment positive and negative data into question-answering format. Specifically, we let GPT-4 convert descriptive positive-negative data into one question with positive-negative answer pairs. Then the question is provided to LVLM and positive-negative responses are sampled according to previously given answers. In HA-DPO training, the descriptive positive-negative data and question-answering positive-negative data form all the preference learning data.
+          </p>
+          <p>  
+            <b>4. Hallucination mitigation</b>: The constructed positive-negative hallucination-aware data are used for model fine-tuning, based on DPO (Direct Preference Optimization).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Instruction -->
+
+<!-- Paper Instroduction -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3"><small>SHR: Sentence-level Hallucination Ratio</small></h2>
+        <div class="content has-text-justified">
+          <p>
+          </p>
+          <img width="1000px" src="static/shr.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;" />
+          <p>In response to the limitations of the POPE, we propose a new GPT-4 assisted evaluation metric, termed "Sentence-level Hallucination Ratio" (SHR), aimed at quantifying the degree of hallucination at the sentence level in multimodal AI models. These descriptions or responses often contain multiple sentences for multimodal models that generate detailed descriptions of a given image. The SHR measures the proportion of sentences showing hallucinations to the total number of sentences in the response.</p>
+          <p>To overcome the evaluation inaccuracy in SHR, we manually add additional factual information for each image, which can help ensure the high evaluation accuracy of SHR. Overall, the accuracy of GPT-4 judgment can reach about 95\% with the assistance of human-annotated factual information. </p>
+          <p>Compared with current hallucination evaluation benchmarks such as POPE, our proposed SHR demonstrates following advantages: (1) Openness of object categories. The VG images encompass thousands of object types in total and any object of any category within these images is part of the evaluation. (2) SHR covers various types of hallucinations. In the SHR evaluation, there are no restrictions on the types of hallucinations and any description that conflicts with the image content is considered a hallucination. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="columns is-centered has-text-centered">
+  <HR align=center style="border:3 double #000000" width="80%" SIZE=5>
+</div>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h4 class="title">BibTeX</h4>
+      <pre><code>@misc{zhao2023hallucinations,
+            title={Beyond Hallucinations: Enhancing LVLMs through Hallucination-Aware Direct Preference Optimization}, 
+            author={Zhiyuan Zhao and Bin Wang and Linke Ouyang and Xiaoyi Dong and Jiaqi Wang and Conghui He},
+            year={2023},
+            eprint={2311.16839},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}
+      }
+      </code></pre>
+    </div>
+</section>
+
+<!-- Terms of use and License -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+      <div class="column is-six-fifths">
+        <h4 class="title is-5">Terms of Use</h4>
+        <div class="content has-text-justified">
+          <p>
+            By utilizing this service, users are bound to comply with the stipulated terms: The service is primarily a research preview, designed exclusively for non-commercial applications. It offers only limited safety measures and there's a possibility it may produce offensive content. Users are strictly prohibited from using the service for any illegal, harmful, violent, racist, or sexually explicit purposes.
+          </p>
+        </div>
+        <h4 class="title is-5">License</h4>
+        <div class="content has-text-justified">
+          <p>
+            This service, being a research preview, is intended solely for non-commercial use and is governed by the model License of LLaMA. If you encounter any potential violation, we urge you to contact us immediately.          </p>
+        </div>
+      </div>
+  </div> </section> <!-- End Terms of use and License --> 
+
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website is partially borrowed from  <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
