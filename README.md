@@ -2,7 +2,7 @@
 
 **Shanghai Artificial Intelligence Laboratory**
 
-[[Paper]](https://arxiv.org/pdf/2311.16839.pdf) [[Data](huggingface)](https://huggingface.co/datasets/juliozhao/hadpo-data) [[Data](opendatalab)](https://openxlab.org.cn/datasets/zzy8782180/HA-DPO) [[Models]](https://huggingface.co/juliozhao)
+[[Paper]](https://arxiv.org/pdf/2311.16839.pdf) [[Data(huggingface)]](https://huggingface.co/datasets/juliozhao/hadpo-data) [[Data(opendatalab)]](https://openxlab.org.cn/datasets/zzy8782180/HA-DPO) [[Models]](https://huggingface.co/juliozhao)
 
 ## Introduction
 
